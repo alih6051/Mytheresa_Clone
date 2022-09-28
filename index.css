@@ -1,0 +1,189 @@
+/* Hero Section */
+
+.hero-section {
+  height: 600px;
+  background-image: url("https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW38/BIG_EN1/Big-desktop-Pre-Fall_Update_1_2x_20220920155224.jpg?imwidth=1180&imdensity=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+/* New Arrival Section */
+
+.new-arrival-section {
+  padding: 40px 100px;
+  cursor: pointer;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.new-arrival-section > h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.new-arrival-section > h1 {
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 0.67em;
+  cursor: pointer;
+}
+
+.new-arrival-section > h5 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 26px;
+  cursor: pointer;
+}
+
+.new-arrival-section > a {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  padding: 7px 20px;
+  font-size: 14px;
+}
+
+/* Bridal Section */
+
+.bridal-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 0 25px;
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.bridal-section > div {
+  padding-bottom: 30px;
+}
+
+.bridal-section img {
+  width: 100%;
+}
+
+.bridal-section h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.bridal-section h1 {
+  font-size: 34px;
+  font-weight: 400;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.bridal-section img {
+  margin-bottom: 40px;
+}
+
+.bridal-section a {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  padding: 7px 20px;
+  font-size: 14px;
+}
+
+.bridal-section > div:nth-child(1) {
+  grid-area: 1/1 / span 2/ 1;
+}
+
+.bridal-section > div:nth-child(1) img {
+  height: 900px;
+}
+
+.bridal-section > div:nth-child(2) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* Product section */
+
+.product-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.product-section h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.product-section h1 {
+  font-size: 34px;
+  font-weight: 400;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.product-section > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 0 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.product-section > div > div > img {
+  width: 100%;
+}
+
+.product-section a {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  padding: 7px 20px;
+  font-size: 14px;
+}
+
+/* T&C Section */
+
+.tnc-section {
+  padding: 30px 80px;
+  border-top: 1px solid #dfdfdf;
+  text-align: left;
+}
+
+.tnc-section h1 {
+  font-size: 16px;
+  word-spacing: 10;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.tnc-section p {
+  font-size: 13px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.tnc-section li {
+  font-size: 13px;
+}
+
+.tnc-section > .left {
+  width: 47%;
+}
+
+.tnc-section > .right {
+  width: 47%;
+}
+
+.tnc-section li {
+  list-style: disc;
+  margin-left: 20px;
+}
