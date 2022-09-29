@@ -3,7 +3,7 @@
 .hero-section {
   height: 600px;
   background-image: url("https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW38/BIG_EN1/Big-desktop-Pre-Fall_Update_1_2x_20220920155224.jpg?imwidth=1180&imdensity=1");
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 40px;
@@ -148,42 +148,4 @@
   border-color: #000;
   padding: 7px 20px;
   font-size: 14px;
-}
-
-/* T&C Section */
-
-.tnc-section {
-  padding: 30px 80px;
-  border-top: 1px solid #dfdfdf;
-  text-align: left;
-}
-
-.tnc-section h1 {
-  font-size: 16px;
-  word-spacing: 10;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.tnc-section p {
-  font-size: 13px;
-  text-align: left;
-  margin: 20px 0;
-}
-
-.tnc-section li {
-  font-size: 13px;
-}
-
-.tnc-section > .left {
-  width: 47%;
-}
-
-.tnc-section > .right {
-  width: 47%;
-}
-
-.tnc-section li {
-  list-style: disc;
-  margin-left: 20px;
 }

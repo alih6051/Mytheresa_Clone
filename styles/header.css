@@ -25,8 +25,9 @@
   font-weight: 700;
 }
 
-#logo {
-  margin-right: 310px;
+#logo-wrapper > a {
+  position: absolute;
+  right: 0;
 }
 
 #logo img {
@@ -35,6 +36,7 @@
 
 #logo-wrapper {
   margin-bottom: 30px;
+  position: relative;
 }
 
 #logo-wrapper a {
