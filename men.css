@@ -1,0 +1,135 @@
+#navbar .left > a:nth-child(1) {
+  padding: 11px 10px;
+  background-color: white;
+}
+
+#navbar .left > a:nth-child(2) {
+  padding: 11px 10px;
+  background-color: #f2f2f2;
+}
+
+/* hero section */
+
+.hero-section {
+  height: 450px;
+  background-image: url("https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW38/BIG_DESKTOP_2X_20220919120131.jpg?imwidth=1180&imdensity=1");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+.hero-section > div {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.hero-section > div > a {
+  color: black;
+  background-color: white;
+  border-color: #000;
+  padding: 7px 20px;
+  font-size: 14px;
+}
+
+.hero-section > div > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-section > div > h1 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* new arrival section */
+
+.new-arrival-section {
+  padding: 40px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.new-arrival-section > h1 {
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 0.67em;
+  cursor: pointer;
+}
+
+.new-arrival-section > .items > div {
+  height: auto;
+  width: 24%;
+}
+
+.new-arrival-section > .items > div > img {
+  width: 100%;
+}
+
+.new-arrival-section > .items > div > p + p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.new-arrival-section > .button {
+  margin-top: 30px;
+}
+
+.new-arrival-section > .button > a {
+  color: white;
+  background-color: #000;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+/* hero bottom */
+
+.hero-bottom {
+  margin-top: 20px;
+  height: 590px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.hero-bottom > div {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-bottom > div:nth-child(1) {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7%;
+  padding-right: 9%;
+  color: #f2f2f2;
+}
+
+.hero-bottom > div:nth-child(1) > h1 {
+  margin-bottom: 20px;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 500;
+}
+
+.hero-bottom > div:nth-child(1) > p {
+  margin-bottom: 50px;
+}
+
+.hero-bottom > div:nth-child(1) > a {
+  color: black;
+  background-color: white;
+  border-color: #000;
+  padding: 7px 20px;
+  font-size: 14px;
+  width: 140px;
+}
+
+.hero-bottom > div:nth-child(2) {
+  overflow: hidden;
+}
+
+.hero-bottom > div:nth-child(2) > img {
+  width: 100%;
+}

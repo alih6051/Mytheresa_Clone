@@ -1,0 +1,138 @@
+/* T&C Section */
+
+.tnc-section {
+  padding: 30px 80px;
+  border-top: 1px solid #dfdfdf;
+  text-align: left;
+}
+
+.tnc-section > h1:nth-child(1) {
+  text-align: center;
+}
+
+.tnc-section h1 {
+  font-size: 16px;
+  word-spacing: 10;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.tnc-section p {
+  font-size: 13px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.tnc-section li {
+  font-size: 13px;
+}
+
+.tnc-section > .left {
+  width: 47%;
+}
+
+.tnc-section > .right {
+  width: 47%;
+}
+
+.tnc-section li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* download-section */
+
+.download-section {
+  padding: 20px 0;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.download-section h1 {
+  text-align: center;
+  font-size: 16px;
+  word-spacing: 10;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.store-icon > div {
+  width: 10%;
+  margin: 10px 5px;
+}
+
+.store-icon > div > img {
+  width: 100%;
+}
+
+/* footer-section */
+
+.footer-section {
+  padding: 20px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.footer-section > .upper h1 {
+  font-size: 16px;
+  word-spacing: 10;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.footer-section > .upper > div:nth-child(1) > div {
+  font-size: 15px;
+  word-spacing: 10;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.footer-section > .upper > div:nth-child(1) > div p:nth-child(2) {
+  color: #757575;
+}
+
+.footer-section > .upper > div p {
+  color: #757575;
+}
+
+.email > input {
+  width: 230px;
+  height: 32px;
+  padding: 5px 12px;
+}
+.email > button {
+  width: 180px;
+  height: 32px;
+  position: relative;
+  left: -6px;
+}
+
+.email ~ div {
+  margin-top: 15px;
+}
+
+.email ~ div p:nth-child(1) {
+  color: black;
+}
+
+.social-icons {
+  margin-top: 8px;
+}
+
+.social-icons > i {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.footer-section > .bottom {
+  margin-top: 40px;
+}
+
+.footer-section > .bottom > div > p {
+  color: #757575;
+}
+
+.footer-section > .bottom > div > a {
+  padding: 0 10px;
+  color: #757575;
+}
