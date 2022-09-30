@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8b2562b53e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="account.css" />
+    <title>Create New Customer Account</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <div id="navbar" class="container flex justify-between">
+      <div class="left flex align-center">
+        <a href="index.html">Women</a>
+        <a href="men.html">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Life</a>
+      </div>
+      <div class="right flex align-center justify-between">
+        <a href="#">Signup for Newsletter</a>
+        <a href="account.html">My account</a>
+        <a href="#">My wishlist <i class="fa-solid fa-heart"></i></a>
+        <a href="#">Australia | English</a>
+      </div>
+    </div>
+    <div id="logo-wrapper" class="flex justify-center container align-center">
+      <div id="logo">
+        <a href="index.html">
+          <img
+            src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220906T141618"
+            alt="error"
+          />
+        </a>
+      </div>
+      <a href="cart.html">
+        <div>
+          <span>SHOPPING CART</span>
+          <i class="fa fa-shopping-cart fa-2xl"></i>
+          <span id="itemCount"></span>
+        </div>
+      </a>
+    </div>
+    <div
+      id="category-wrapper"
+      class="container flex justify-between align-left"
+    >
+      <div class="left">
+        <a href="#">New Arrivals</a>
+        <a href="#">Designers</a>
+        <a href="#">Clothings</a>
+        <a href="#">Shoes</a>
+        <a href="#">Bags</a>
+        <a href="#">Accessories</a>
+        <a href="#">Jewelry</a>
+        <a href="#">Vacation</a>
+        <a href="#">Sale</a>
+      </div>
+      <div class="right">
+        <input type="text" placeholder="Search for..." />
+      </div>
+    </div>
+    <hr />
+
+    <div class="form-container container flex justify-left">
+      <div class="form-left">
+        <form class="form-register">
+          <h1>CREATE AN ACCOUNT</h1>
+          <p>Please enter the following information to create your account.</p>
+          <input
+            type="text"
+            name="first_name"
+            placeholder="first name *"
+            required
+          />
+          <input
+            type="text"
+            name="last_name"
+            placeholder="last name *"
+            required
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="email address *"
+            required
+          />
+          <input type="password" name="pwd" placeholder="password *" required />
+          <p>
+            I agree that Mytheresa may insert analytical web beacons into the
+            newsletter and create a personalized user profile based on my
+            purchase and usage behavior, including sending a notification when I
+            have placed something in the shopping cart. Further details can be
+            found in our Privacy Policy, clause 5. I understand that I can
+            revoke my consent at any time by emailing privacy@mytheresa.com.
+          </p>
+          <input type="submit" value="Register" />
+        </form>
+      </div>
+
+      <div class="form-right">
+        <form class="form-login">
+          <h1>ALREADY REGISTERED?</h1>
+          <p>If you have an account with us, please log in.</p>
+          <input
+            type="email"
+            name="email"
+            placeholder="email address *"
+            required
+          />
+          <input type="password" name="pwd" placeholder="password *" required />
+          <p>* required fields</p>
+          <input type="submit" value="Login" />
+          <p>
+            At Mytheresa, we keep your information secure. As a result, it will
+            be necessary for you to log in to your account before you are able
+            to place an order or change the information on your account. You
+            will be asked to log in to complete your order even if you have
+            already been greeted on the website.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <section class="footer-section container">
+      <div class="upper flex justify-between">
+        <div>
+          <h1>SERVICE & SECURITY</h1>
+          <div>
+            <p>Fast delivery</p>
+            <p>Delivery within 2 business days</p>
+          </div>
+          <div>
+            <p>Fast delivery</p>
+            <p>Delivery within 2 business days</p>
+          </div>
+          <div>
+            <p>Fast delivery</p>
+            <p>Delivery within 2 business days</p>
+          </div>
+        </div>
+        <div>
+          <h1>MYTHERESA</h1>
+          <div>
+            <p>About us</p>
+            <p>Trust & services</p>
+            <p>Sustainability</p>
+            <p>Press</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Affiliates</p>
+            <p>Tax-Free Shopping</p>
+          </div>
+        </div>
+        <div>
+          <h1>CUSTOMER <br />CARE</h1>
+          <div>
+            <p>Contact us</p>
+            <p>Shipping information</p>
+            <p>Secure payment</p>
+            <p>Exchanges</p>
+            <p>Returns</p>
+            <p>After sale service</p>
+            <p>Gift card</p>
+          </div>
+        </div>
+        <div>
+          <h1>GET TREND UPDATES, STYLE TIPS AND MORE</h1>
+          <div class="email">
+            <input type="email" placeholder="your email address here..." />
+            <button>SIGN UP</button>
+          </div>
+          <div>
+            <p>Wish list</p>
+            <p>Receive personal notifications</p>
+          </div>
+          <div>
+            <p>Follow us on</p>
+            <div class="social-icons">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom flex justify-between">
+        <div><p>copyright © 2006-2022 mytheresa.com</p></div>
+        <div>
+          <a href="#">terms of use</a>
+          <a href="#">privacy policy</a>
+          <a href="#">imprint</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script src="account.js"></script>
+  </body>
+</html>

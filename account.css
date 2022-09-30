@@ -1,0 +1,45 @@
+.form-container {
+  height: 500px;
+  padding: 40px 0;
+}
+
+.form-container h1 {
+  font-size: 16px;
+  word-spacing: 10;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  font-size: 13px;
+  text-align: left;
+  color: #757575;
+  margin-bottom: 40px;
+}
+
+.form-container input {
+  width: 100%;
+  height: 35px;
+  padding: 5px 0 5px 12px;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+.form-container .form-left,
+.form-container .form-right {
+  width: 50%;
+}
+
+.form-container .form-left {
+  padding-right: 50px;
+}
+
+.form-container .form-right {
+  padding-left: 50px;
+  border-left: 1px solid #dfdfdf;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: #dfdfdf;
+}

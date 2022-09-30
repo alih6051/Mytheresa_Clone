@@ -1,0 +1,60 @@
+.main-container {
+  padding: 40px 0;
+  margin-top: 40px;
+  height: auto;
+  border-top: 1px solid #dfdfdf;
+}
+
+.main-container > .left {
+  height: 100%;
+  width: 25%;
+}
+
+.main-container > .right {
+  height: 100%;
+  width: 72%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.main-container > .right > div {
+  height: auto;
+  text-align: center;
+}
+
+.main-container > .right > div > img {
+  width: 100%;
+}
+
+.main-container > .right > div > h1 {
+  font-size: 16px;
+  word-spacing: 10;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-weight: 450;
+}
+
+.main-container > .right > div > h1 + p {
+  color: #757575;
+}
+
+.main-container > .right > div p + p {
+  font-weight: 500;
+}
+
+.main-container > .right > div p + p::before {
+  content: "$ ";
+}
+
+#byPrice {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#byBrand {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}

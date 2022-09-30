@@ -49,6 +49,10 @@ a {
   justify-content: end;
 }
 
+.justify-left {
+  justify-content: start;
+}
+
 .align-center {
   align-items: center;
 }
