@@ -2,11 +2,11 @@
 
 .hero-section {
   height: 600px;
-  background-image: url("https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW38/BIG_EN1/Big-desktop-Pre-Fall_Update_1_2x_20220920155224.jpg?imwidth=1180&imdensity=1");
-  background-position: right;
+  background-image: url("https://img.mytheresa.com/media/static/raw/cms/l/WW_Moncler_Bigs/Moncler_MayaJacket_Act_Big_desktop_1_x2_20220928145617.jpg?imwidth=1180&imdensity=1");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 40px;
+  margin: 40px auto;
 }
 
 /* New Arrival Section */
