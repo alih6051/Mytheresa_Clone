@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products | Mytheresa</title>
     <script
       src="https://kit.fontawesome.com/8b2562b53e.js"
       crossorigin="anonymous"
@@ -13,11 +12,10 @@
     <link rel="stylesheet" href="styles/utils.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <title>Your Shopping Bag | Mytheresa</title>
   </head>
   <body>
-    <!-- Header Section -->
-
     <div id="navbar" class="container flex justify-between">
       <div class="left flex align-center">
         <a href="index.html">Women</a>
@@ -70,52 +68,21 @@
     </div>
     <hr />
 
-    <!-- products section -->
+    <!-- cart body -->
+    <h1 class="title">Cart</h1>
+    <section class="cart_main container">
+      <div class="cart_items"></div>
+    </section>
 
-    <section class="main-container container flex justify-between">
-      <div class="left">
-        <select id="byPrice" onChange="handlePrice(products)">
-          <option value="">Sort by Price</option>
-          <option value="Low to High">Low to High</option>
-          <option value="High to Low">High to Low</option>
-        </select>
+    <!-- checkout section -->
 
-        <select id="byBrand" onChange="handleFilter(products)">
-          <option value="">Filter by Brand</option>
-          <option value="BRUNELLO CUCINELLI">BRUNELLO CUCINELLI</option>
-          <option value="BODE">BODE</option>
-          <option value="ADISH">ADISH</option>
-          <option value="JUNYA WATANABE">JUNYA WATANABE</option>
-          <option value="DOLCE&GABBANA">DOLCE&GABBANA</option>
-          <option value="GUCCI">GUCCI</option>
-          <option value="BOTTEGA VENETA">BOTTEGA VENETA</option>
-          <option value="OUR LEGACY">OUR LEGACY</option>
-          <option value="JIL SANDER">JIL SANDER</option>
-          <option value="SAINT LAURENT">SAINT LAURENT</option>
-        </select>
-      </div>
-      <div class="right"></div>
+    <section class="checkout container">
+      <p>Grand Total $ <span id="total"></span></p>
+      <p>VAT exception. VAT not included. Shipping not included.</p>
+      <button onClick="handleCheckout()">PROCEED TO CHECKOUT</button>
     </section>
 
     <!-- footer section -->
-
-    <section class="download-section container">
-      <h1>SHOP WHENEVER, WHEREVER WITH THE APP</h1>
-      <div class="store-icon flex justify-center">
-        <div class="ios">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
-            alt=""
-          />
-        </div>
-        <div class="android">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNuf39VGGHSRxiLJNK9jqS0w4XFrLk34Xmg&usqp=CAU"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
 
     <section class="footer-section container">
       <div class="upper flex justify-between">
@@ -193,6 +160,7 @@
       </div>
     </section>
 
-    <script src="products.js"></script>
+    <!-- JS -->
+    <script src="cart.js"></script>
   </body>
 </html>

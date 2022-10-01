@@ -1,3 +1,6 @@
+let cart_items = JSON.parse(localStorage.getItem("cart")) || [];
+document.querySelector("#itemCount").innerText = cart_items.length;
+
 // Getting User List
 let user_list = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -56,6 +59,7 @@ function handleLogin(e) {
       if (el.pwd === user.pwd) {
         alert("Login Sucessfull");
         exist = true;
+        sessionStorage.setItem("loginStatus", true);
       }
     }
   });
