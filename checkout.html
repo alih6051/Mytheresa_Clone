@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products | Mytheresa</title>
     <script
       src="https://kit.fontawesome.com/8b2562b53e.js"
       crossorigin="anonymous"
@@ -13,11 +12,10 @@
     <link rel="stylesheet" href="styles/utils.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="checkout.css" />
+    <title>Checkout | Mytheresa</title>
   </head>
   <body>
-    <!-- Header Section -->
-
     <div id="navbar" class="container flex justify-between">
       <div class="left flex align-center">
         <a href="index.html">Women</a>
@@ -54,15 +52,15 @@
       class="container flex justify-between align-left"
     >
       <div class="left">
-        <a href="products.html">New Arrivals</a>
-        <a href="products.html">Designers</a>
-        <a href="products.html">Clothings</a>
-        <a href="products.html">Shoes</a>
-        <a href="products.html">Bags</a>
-        <a href="products.html">Accessories</a>
-        <a href="products.html">Jewelry</a>
-        <a href="products.html">Vacation</a>
-        <a href="products.html">Sale</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Designers</a>
+        <a href="#">Clothings</a>
+        <a href="#">Shoes</a>
+        <a href="#">Bags</a>
+        <a href="#">Accessories</a>
+        <a href="#">Jewelry</a>
+        <a href="#">Vacation</a>
+        <a href="#">Sale</a>
       </div>
       <div class="right">
         <input type="text" placeholder="Search for..." />
@@ -70,52 +68,88 @@
     </div>
     <hr />
 
-    <!-- products section -->
+    <!-- checkout section -->
 
-    <section class="main-container container flex justify-between">
-      <div class="left">
-        <select id="byPrice" onChange="handlePrice(products)">
-          <option value="">Sort by Price</option>
-          <option value="Low to High">Low to High</option>
-          <option value="High to Low">High to Low</option>
-        </select>
+    <h1 id="heading">Checkout</h1>
 
-        <select id="byBrand" onChange="handleFilter(products)">
-          <option value="">Filter by Brand</option>
-          <option value="BRUNELLO CUCINELLI">BRUNELLO CUCINELLI</option>
-          <option value="BODE">BODE</option>
-          <option value="ADISH">ADISH</option>
-          <option value="JUNYA WATANABE">JUNYA WATANABE</option>
-          <option value="DOLCE&GABBANA">DOLCE&GABBANA</option>
-          <option value="GUCCI">GUCCI</option>
-          <option value="BOTTEGA VENETA">BOTTEGA VENETA</option>
-          <option value="OUR LEGACY">OUR LEGACY</option>
-          <option value="JIL SANDER">JIL SANDER</option>
-          <option value="SAINT LAURENT">SAINT LAURENT</option>
-        </select>
-      </div>
-      <div class="right"></div>
+    <section class="checkout container">
+      <p>Grand Total $ <span id="total"></span></p>
+      <p>VAT exception. VAT not included. Shipping not included.</p>
     </section>
+
+    <div class="form-container container flex justify-left">
+      <div class="form-left">
+        <form class="form-billing">
+          <h1>BILLING ADDRESS</h1>
+          <label><i class="fa-solid fa-user"></i> Full Name</label>
+          <input
+            type="text"
+            name="fullName"
+            placeholder="John M. Doe *"
+            required
+          />
+          <label><i class="fa-solid fa-envelope"></i> Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="john@example.com"
+            required
+          />
+          <label><i class="fa fa-address-card-o"></i> Address</label>
+          <input
+            type="text"
+            name="address"
+            placeholder="542 W. 15th Street"
+            required
+          />
+          <label><i class="fa fa-institution"></i> City</label>
+          <input type="text" name="city" placeholder="New York" required />
+          <label><i class="fa fa-institution"></i> Zip Code</label>
+          <input type="number" name="zip" placeholder="10001" required />
+        </form>
+      </div>
+
+      <div class="form-right">
+        <form class="form-card">
+          <h1>PAYMENT</h1>
+          <label>Name on Card</label>
+          <input
+            type="text"
+            name="cardname"
+            placeholder="John More Doe"
+            required
+          />
+
+          <label>Credit/Debit card number</label>
+          <input
+            type="number"
+            name="cardnumber"
+            placeholder="1111-2222-3333-4444"
+            required
+          />
+
+          <label>Exp Month</label>
+          <input type="text" name="expmonth" placeholder="September" required />
+
+          <label>Exp Year</label>
+          <input type="text" name="expyear" placeholder="2018" required />
+
+          <label>CVV</label>
+          <input type="text" name="cvv" placeholder="352" required />
+
+          <input type="submit" value="Proceed to Pay" required />
+          <p>
+            At Mytheresa, we keep your information secure. As a result, it will
+            be necessary for you to log in to your account before you are able
+            to place an order or change the information on your account. You
+            will be asked to log in to complete your order even if you have
+            already been greeted on the website.
+          </p>
+        </form>
+      </div>
+    </div>
 
     <!-- footer section -->
-
-    <section class="download-section container">
-      <h1>SHOP WHENEVER, WHEREVER WITH THE APP</h1>
-      <div class="store-icon flex justify-center">
-        <div class="ios">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
-            alt=""
-          />
-        </div>
-        <div class="android">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNuf39VGGHSRxiLJNK9jqS0w4XFrLk34Xmg&usqp=CAU"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
 
     <section class="footer-section container">
       <div class="upper flex justify-between">
@@ -193,6 +227,7 @@
       </div>
     </section>
 
-    <script src="products.js"></script>
+    <!-- JS -->
+    <script src="checkout.js"></script>
   </body>
 </html>

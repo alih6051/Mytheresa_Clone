@@ -127,27 +127,136 @@ let products = [
   },
 ];
 
+// Sort by price function
+function handlePrice(data) {
+  let selected = document.querySelector("#byPrice").value;
+  if (selected == "Low to High") {
+    data = data.sort((a, b) => {
+      return a.price - b.price;
+    });
+  }
+  if (selected == "High to Low") {
+    data = data.sort((a, b) => {
+      return b.price - a.price;
+    });
+  }
+  displaysProds(data);
+}
+
+// Filter by Brand function
+function handleFilter(data) {
+  let selected = document.querySelector("#byBrand").value;
+  let filtered;
+
+  if (selected == "BRUNELLO CUCINELLI") {
+    filtered = data.filter((el) => {
+      return el.brand == "BRUNELLO CUCINELLI";
+    });
+  }
+  if (selected == "BODE") {
+    filtered = data.filter((el) => {
+      return el.brand == "BODE";
+    });
+  }
+  if (selected == "ADISH") {
+    filtered = data.filter((el) => {
+      return el.brand == "ADISH";
+    });
+  }
+  if (selected == "JUNYA WATANABE") {
+    filtered = data.filter((el) => {
+      return el.brand == "JUNYA WATANABE";
+    });
+  }
+  if (selected == "DOLCE&GABBANA") {
+    filtered = data.filter((el) => {
+      return el.brand == "DOLCE&GABBANA";
+    });
+  }
+  if (selected == "GUCCI") {
+    filtered = data.filter((el) => {
+      return el.brand == "GUCCI";
+    });
+  }
+  if (selected == "BOTTEGA VENETA") {
+    filtered = data.filter((el) => {
+      return el.brand == "BOTTEGA VENETA";
+    });
+  }
+  if (selected == "OUR LEGACY") {
+    filtered = data.filter((el) => {
+      return el.brand == "OUR LEGACY";
+    });
+  }
+  if (selected == "JIL SANDER") {
+    filtered = data.filter((el) => {
+      return el.brand == "JIL SANDER";
+    });
+  }
+  if (selected == "SAINT LAURENT") {
+    filtered = data.filter((el) => {
+      return el.brand == "SAINT LAURENT";
+    });
+  }
+  displaysProds(filtered);
+}
+
+// Getting data from Local Storage
+let cart_items = JSON.parse(localStorage.getItem("cart")) || [];
+let wishlist_items = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+document.querySelector("#itemCount").innerText = cart_items.length;
+
 displaysProds(products);
 
 function displaysProds(data) {
   document.querySelector(".main-container > .right").innerHTML = "";
 
   data.forEach((el, i) => {
-    div = document.createElement("div");
+    let div = document.createElement("div");
 
-    img = document.createElement("img");
+    let img = document.createElement("img");
     img.src = el.img;
 
-    brand = document.createElement("h1");
+    let brand = document.createElement("h1");
     brand.innerText = el.brand;
 
-    prod_name = document.createElement("p");
+    let prod_name = document.createElement("p");
     prod_name.innerText = el.name;
 
-    price = document.createElement("p");
+    let price = document.createElement("p");
     price.innerText = el.price;
 
-    div.append(img, brand, prod_name, price);
+    btn_div = document.createElement("div");
+
+    btn_addCart = document.createElement("button");
+    btn_addCart.innerText = "Add to Cart";
+    btn_addCart.addEventListener("click", function () {
+      handleCart(el);
+    });
+
+    btn_wishlist = document.createElement("button");
+    btn_wishlist.innerText = "Wishlist";
+    btn_wishlist.addEventListener("click", function () {
+      handleWishlist(el);
+    });
+
+    btn_div.append(btn_addCart, btn_wishlist);
+
+    div.append(img, brand, prod_name, price, btn_div);
     document.querySelector(".main-container > .right").append(div);
   });
+
+  // Add to cart function
+  function handleCart(el) {
+    cart_items.push(el);
+    document.querySelector("#itemCount").innerText = cart_items.length;
+    localStorage.setItem("cart", JSON.stringify(cart_items));
+  }
+
+  // Add to Wishlist function
+  function handleWishlist(el) {
+    wishlist_items.push(el);
+    localStorage.setItem("wishlist", JSON.stringify(wishlist_items));
+  }
 }

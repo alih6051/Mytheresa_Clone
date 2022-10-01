@@ -58,3 +58,26 @@
   padding: 10px;
   margin-bottom: 20px;
 }
+
+.main-container > .right > div > div {
+  /* border: 1px solid red; */
+  padding: 0 15px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container > .right > div > div > button {
+  padding: 5px 7px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.main-container > .right > div > div > button:nth-child(1) {
+  background-color: black;
+}
+
+.main-container > .right > div > div > button:nth-child(2) {
+  color: black;
+}
