@@ -57,7 +57,7 @@ function handleRegister(e) {
 
   user_list.push(user);
   localStorage.setItem("users", JSON.stringify(user_list));
-
+  alert("Account Created Successfully");
   register.reset();
 }
 
