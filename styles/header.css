@@ -6,6 +6,13 @@
   cursor: pointer;
 }
 
+.logout > div:hover {
+  background-color: #cd104d;
+  border: none;
+  color: white;
+  border: 2px solid #cd104d;
+}
+
 #navbar {
   height: 50px;
   margin-bottom: 50px;
