@@ -3,7 +3,7 @@
 
 Diva is a clone of Nykaa.com. It sells beauty wellness and fashion products. The brand specialises in facilitating an extensive collection of cosmetics, skincare, haircare, fragrances, bath and body, luxury as well as wellness products for both women and men.
 
-This was a collaborative project made by 3 members Executed in 5 days. Team lead- Mohd Hasan Ali 1: Rohit Member-1: Masum Raja Member-3: Sachin Kumar
+It was a collaborative project made by 3 members Executed in 5 days. Team lead- Mohd Hasan Ali 1: Rohit Member-1: Masum Raja Member-3: Sachin Kumar
 
 Original website link: https://www.mytheresa.com/int_en
 
